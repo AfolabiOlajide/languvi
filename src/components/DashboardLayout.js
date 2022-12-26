@@ -22,7 +22,7 @@ const DashboardLayout = () => {
                         <div className="w-[4rem] h-[4rem] rounded-md bg-primary"></div>
                     </div>
                     <div className="name">
-                        <h3 className='font-bold text-2xl'>SpaceAg Sac</h3>
+                        <h3 className='font-bold text-xl'>SpaceAg Sac</h3>
                         <p>change company</p>
                     </div>
                 </div>
@@ -70,7 +70,9 @@ const DashboardLayout = () => {
                         </div>
                     </div>
                 </div>
-                <Outlet />
+                <div className="outlet">
+                    <Outlet />
+                </div>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const Dashboard = () => {
     return (
         <div className='px-6 py-3'>
             <div className="welcome">
-                <img src={WelcomeImg} className={`w-[50%] ${welcomeImgAvailable ? "block" : "hidden"}`} alt="Welcome" onClick={toggleWelcomeImgHandler} />
+                <img src={WelcomeImg} className={`w-full lg:w-[50%] ${welcomeImgAvailable ? "block" : "hidden"}`} alt="Welcome" onClick={toggleWelcomeImgHandler} />
             </div>
         </div>
     )
