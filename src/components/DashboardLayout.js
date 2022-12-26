@@ -16,7 +16,7 @@ const DashboardLayout = () => {
 
     return (
         <div className='lg:grid lg:grid-cols-[20%_80%]'>
-            <div className={`absolute top-0 ${menuToggled ? "left-0" : "-left-[110%]"} duration-300 ease-in transition-all z-50 lg:relative dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 `}>
+            <div className={`absolute top-0 ${menuToggled ? "left-0" : "-left-[110%]"} duration-300 ease-in transition-all z-50 lg:relative lg:left-0 dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 `}>
                 <div className="menu-header flex flex-row gap-4">
                     <div className="img">
                         <div className="w-[4rem] h-[4rem] rounded-md bg-primary"></div>
