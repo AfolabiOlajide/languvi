@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.menu-hover:hover{
+    background-color: #fccc9f;
+    color: #EF7E3A;
+    border-radius: .3rem;
+    transition: .7s all ease;
+}

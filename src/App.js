@@ -5,11 +5,13 @@ import SignIn from "./components/AuthForm/SignIn";
 import Register from "./components/AuthForm/Register";
 import CreateClient from "./components/AuthForm/CreateClient";
 import CreateTranslator from "./components/AuthForm/CreateTranslator";
-import Dashboard from "./components/Dashboard/DashboardContainer/Dashboard";
-import Settings from "./components/Dashboard/SettingsContainer/Settings";
-import Services from "./components/Dashboard/ServicesContainer/Services";
-import Documents from "./components/Dashboard/DocumentsContainer/Documents";
-import PersonalDetails from "./components/Dashboard/PersonalDetailsContainer/PersonalDetails";
+// client dashboard
+import ContactUs from "./components/ClientDashboard/ContactUsContainer/ContactUs";
+import Offers from "./components/ClientDashboard/OffersContainer/Offers";
+import Orders from "./components/ClientDashboard/OrdersContainer/Orders";
+import Revisions from "./components/ClientDashboard/RevisionsContainer/Revisions";
+import Settings  from "./components/ClientDashboard/SettingsContainer/Settings";
+import Dashboard from "./components/ClientDashboard/DashboardContainer/Dashboard"
 
 
 function App() {
@@ -22,12 +24,13 @@ function App() {
           <Route path="create-client" element={<CreateClient />} />
           <Route path="create-translator" element={<CreateTranslator />} />
         </Route>
-        <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route path="/client/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
-          <Route path="documents" element={<Documents />} />
-          <Route path="services" element={<Services />} />
+          <Route path="contact-us" element={<ContactUs />} />
+          <Route path="offers" element={<Offers />} />
           <Route path="settings" element={<Settings />} />
-          <Route path="personal-details" element={<PersonalDetails />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="revisions" element={<Revisions />} />
         </Route>
       </Routes>
     </div>

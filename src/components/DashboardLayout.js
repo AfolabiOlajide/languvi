@@ -1,25 +1,49 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
+import { FiLogOut } from "react-icons/fi";
+import MenuDesign from "../assets/menu-design-img.png"
 
 const DashboardLayout = () => {
     return (
-        <div className='flex'>
-            <div className="dashboard-menu flex flex-col gap-y-12 p-12 bg-primaryDark min-h-screen ">
-                <NavLink to="/dashboard">
-                    <div className="link-item">Dashboard</div>
-                </NavLink>
-                <NavLink to="/dashboard/personal-details">
-                    <div className="link-item">Personal Details</div>
-                </NavLink>
-                <NavLink to="/dashboard/services">
-                    <div className="link-item">Services</div>
-                </NavLink>
-                <NavLink to="/dashboard/documents">
-                    <div className="link-item">Documents</div>
-                </NavLink>
-                <NavLink to="/dashboard/settings">
-                    <div className="link-item">Settings</div>
-                </NavLink>
+        <div className='grid grid-cols-[20%_80%] gap-x-4'>
+            <div className="dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 ">
+                <div className="menu-header flex flex-row gap-4">
+                    <div className="img">
+                        <div className="w-[4rem] h-[4rem] rounded-md bg-primary"></div>
+                    </div>
+                    <div className="name">
+                        <h3 className='font-bold text-2xl'>SpaceAg Sac</h3>
+                        <p>change company</p>
+                    </div>
+                </div>
+                <div className="menu-link flex flex-col gap-y-2">
+                    <Link to="/client/dashboard">
+                        <div className="link-item mt-6 font-bold text-primary rounded-md text-center border border-primaryLight p-3">Dashboard</div>
+                    </Link>
+                    <NavLink to="/client/dashboard/orders" className={({ isActive }) => isActive ? "menu-hover bg-primaryLight text-primaryDark px-4 py-3 rounded-md" : "menu-hover text-slate-400 px-4 py-3"}>
+                        <div className="link-item flex gap-x-4 items-center">My Orders</div>
+                    </NavLink>
+                    <NavLink to="/client/dashboard/offers" className={({ isActive }) => isActive ? "menu-hover bg-primaryLight text-primaryDark px-4 py-3 rounded-md" : "menu-hover text-slate-400 px-4 py-3"}>
+                        <div className="link-item flex gap-x-4 items-center">Offers</div>
+                    </NavLink>
+                    <NavLink to="/client/dashboard/revisions" className={({ isActive }) => isActive ? "menu-hover bg-primaryLight text-primaryDark px-4 py-3 rounded-md" : "menu-hover text-slate-400 px-4 py-3"}>
+                        <div className="link-item flex gap-x-4 items-center">Revisions</div>
+                    </NavLink>
+                    <NavLink to="/client/dashboard/contact-us" className={({ isActive }) => isActive ? "menu-hover bg-primaryLight text-primaryDark px-4 py-3 rounded-md" : "menu-hover text-slate-400 px-4 py-3"}>
+                        <div className="link-item flex gap-x-4 items-center">Contact Us</div>
+                    </NavLink>
+                    <NavLink to="/client/dashboard/settings" className={({ isActive }) => isActive ? "menu-hover bg-primaryLight text-primaryDark px-4 py-3 rounded-md" : "menu-hover text-slate-400 px-4 py-3"}>
+                        <div className="link-item flex gap-x-4 items-center">Settings</div>
+                    </NavLink>
+                </div>
+                <div className="log-out mt-[5rem]">
+                    <div className="cursor-pointer font-bold text-black rounded-md flex justify-between border-primaryLight p-3">Logout <FiLogOut /> </div>
+                </div>
+                <div className="menu-design relative bg-primaryLight flex flex-col gap-y-3 justify-center py-4 px-12 pt-[8rem] mt-[10rem] rounded-[2rem]">
+                    <img src={MenuDesign} className="-mt-[5rem] absolute left-[50%] translate-x-[-50%] -top-[1rem]" alt="" />
+                    <p className='font-bold text-center'>Get Professional Translation</p>
+                    <button className='bg-black text-white rounded-full px-4 py-2 text-center'>Order Now</button>
+                </div>                
             </div>
             <div className="view">
                 <Outlet />
