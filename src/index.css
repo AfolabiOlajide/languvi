@@ -25,5 +25,5 @@ body{
 }
 
 .dashboard-menu::-webkit-scrollbar {
-    width: 1em;
+    display: none;
 }
