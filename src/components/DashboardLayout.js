@@ -16,7 +16,7 @@ const DashboardLayout = () => {
 
     return (
         <div className='lg:grid lg:grid-cols-[20%_80%]'>
-            <div className={`absolute top-0 ${menuToggled ? "left-0 max-w-[80%]" : "-left-[110%]"} duration-300 ease-in transition-all z-50 lg:relative lg:left-0 lg:w-[100%] dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 `}>
+            <div className={`fixed top-0 ${menuToggled ? "left-0 max-w-[80%]" : "-left-[110%]"} duration-300 ease-in transition-all z-50 lg:relative lg:left-0 lg:w-[100%] dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 `}>
                 <div className="menu-header flex flex-row gap-4">
                     <div className="img">
                         <div className="w-[4rem] h-[4rem] rounded-md bg-primary"></div>
@@ -55,7 +55,7 @@ const DashboardLayout = () => {
                     <button className='bg-black text-white rounded-full px-4 py-2 text-center'>Order Now</button>
                 </div>                
             </div>
-            <div className="view">
+            <div className="view pb-12">
                 <div className="dashboard-header p-6 bg-zinc-300 flex justify-between">
                     <div className="left flex flex-col gap-y-4">
                         <div className="logo">

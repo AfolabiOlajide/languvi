@@ -18,6 +18,7 @@ module.exports = {
         navyLight: "#667085",
         ash: "#CBCCE8",
         headerText: "#582949",
+        headerTextLight: "#2D0026",
         linkColor: "#FA803F"
       }
     },

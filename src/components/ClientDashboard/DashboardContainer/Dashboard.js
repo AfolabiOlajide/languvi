@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import WelcomeImg from "../../../assets/welImg.png";
 import { MdBookmark } from "react-icons/md";
+import { IoIosFolder } from "react-icons/io";
+import { SlOptionsVertical } from "react-icons/sl"
 
 const Dashboard = () => {
     const [welcomeImgAvailable, setWelcomeImgAvailable] = useState(true);
@@ -17,8 +19,9 @@ const Dashboard = () => {
             </div>
             <div className="flex flex-col-reverse gap-y-4 lg:grid lg:grid-cols-[70%_25%_] lg:gap-x-[2rem]">
                 <div className="files">
-                    <div className="completed">
-                        <div className="head flex justify-between items-center">
+                    {/* completed */}
+                    <div className="completed mb-6">
+                        <div className="head flex justify-between items-center mb-6">
                             <h2 className='font-bold text-headerText text-2xl'>Completed</h2>
                             <Link to="" className='text-linkColor'>View all</Link>
                         </div>
@@ -67,6 +70,54 @@ const Dashboard = () => {
                                     </div>
                                     <div className="logo"><MdBookmark size={24} className={`text-primary cursor-pointer`} /></div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* translating */}
+                    <div className="translating">
+                        <div className="head flex justify-between items-center mb-6">
+                            <h2 className='font-bold text-headerText text-2xl'>Translating</h2>
+                            <Link to="" className='text-linkColor'>View all</Link>
+                        </div>
+                        <div className="items flex flex-wrap flex-rows gap-4 ">
+                            {/* item */}
+                            <div className="item p-2 shadow-md shadow-slate-200 rounded-md flex gap-x-2 items-center">
+                                <div className="left">
+                                    <IoIosFolder size={34} className="text-headerText" />
+                                </div>
+                                <div className="right ">
+                                    <div className="info">
+                                        <div className="category text-headerText font-bold">Insurance</div>
+                                        <div className="title text-headerTextLight">3 Files - olsworld copies</div>
+                                    </div>
+                                </div>
+                                <div className="logo"><SlOptionsVertical size={24} className={`text-headerText cursor-pointer opacity-70`} /></div>
+                            </div>
+                            {/* item */}
+                            <div className="item p-2 shadow-md shadow-slate-200 rounded-md flex gap-x-2 items-center">
+                                <div className="left">
+                                    <IoIosFolder size={34} className="text-headerText" />
+                                </div>
+                                <div className="right ">
+                                    <div className="info">
+                                        <div className="category text-headerText font-bold">Insurance</div>
+                                        <div className="title text-headerTextLight">3 Files - olsworld copies</div>
+                                    </div>
+                                </div>
+                                <div className="logo"><SlOptionsVertical size={24} className={`text-headerText cursor-pointer opacity-70`} /></div>
+                            </div>
+                            {/* item */}
+                            <div className="item p-2 shadow-md shadow-slate-200 rounded-md flex gap-x-2 items-center">
+                                <div className="left">
+                                    <IoIosFolder size={34} className="text-headerText" />
+                                </div>
+                                <div className="right ">
+                                    <div className="info">
+                                        <div className="category text-headerText font-bold">Insurance</div>
+                                        <div className="title text-headerTextLight">3 Files - olsworld copies</div>
+                                    </div>
+                                </div>
+                                <div className="logo"><SlOptionsVertical size={24} className={`text-headerText cursor-pointer opacity-70`} /></div>
                             </div>
                         </div>
                     </div>
