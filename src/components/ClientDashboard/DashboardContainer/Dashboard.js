@@ -74,7 +74,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     {/* translating */}
-                    <div className="translating">
+                    <div className="translating mb-6">
                         <div className="head flex justify-between items-center mb-6">
                             <h2 className='font-bold text-headerText text-2xl'>Translating</h2>
                             <Link to="" className='text-linkColor'>View all</Link>
@@ -118,6 +118,59 @@ const Dashboard = () => {
                                     </div>
                                 </div>
                                 <div className="logo"><SlOptionsVertical size={24} className={`text-headerText cursor-pointer opacity-70`} /></div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* proofreading */}
+                    <div className="proofreading mb-6">
+                        <div className="head flex justify-between items-center mb-6">
+                            <h2 className='font-bold text-headerText text-2xl'>Proofreading</h2>
+                            <Link to="" className='text-linkColor'>View all</Link>
+                        </div>
+                        <div className="items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                            {/* item */}
+                            <div className="item p-4 border border-solid rounded-3xl flex justify-between">
+                                <div className="info">
+                                    <div className="category text-headerText font-bold">Plants</div>
+                                    <div className="title">Coverage</div>
+                                    <div className="language text-linkColor text-[.7rem]">English-Indonesian</div>
+                                </div>
+                                <div className="logo"><MdBookmark size={24} className={`text-primary cursor-pointer`} /></div>
+                            </div>
+                            {/* item */}
+                            <div className="item p-4 border border-solid rounded-3xl flex justify-between">
+                                <div className="info">
+                                    <div className="category text-headerText font-bold">Plants</div>
+                                    <div className="title">Coverage</div>
+                                    <div className="language text-linkColor text-[.7rem]">English-Indonesian</div>
+                                </div>
+                                <div className="logo"><MdBookmark size={24} className={`text-primary cursor-pointer`} /></div>
+                            </div>
+                            {/* item */}
+                            <div className="item p-4 border border-solid rounded-3xl flex justify-between">
+                                <div className="info">
+                                    <div className="category text-headerText font-bold">Plants</div>
+                                    <div className="title">Coverage</div>
+                                    <div className="language text-linkColor text-[.7rem]">English-Indonesian</div>
+                                </div>
+                                <div className="logo"><MdBookmark size={24} className={`text-primary cursor-pointer`} /></div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* on Revision */}
+                    <div className="proofreading mb-6">
+                        <div className="head flex justify-between items-center mb-6">
+                            <h2 className='font-bold text-headerText text-2xl'>Proofreading</h2>
+                            <Link to="" className='text-linkColor'>View all</Link>
+                        </div>
+                        <div className="items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                            {/* item */}
+                            <div className="item p-4 border border-solid rounded-3xl flex justify-between">
+                                <div className="info">
+                                    <div className="category text-headerText text-sm font-bold">Term Paper (Govermental Issues)</div>
+                                    <div className="language text-linkColor text-[.7rem]">English-Indonesian</div>
+                                </div>
+                                <div className="logo"><MdBookmark size={24} className={`text-primary cursor-pointer`} /></div>
                             </div>
                         </div>
                     </div>

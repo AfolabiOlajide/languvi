@@ -16,7 +16,7 @@ const DashboardLayout = () => {
 
     return (
         <div className='lg:grid lg:grid-cols-[20%_80%]'>
-            <div className={`fixed top-0 ${menuToggled ? "left-0 max-w-[80%]" : "-left-[110%]"} duration-300 ease-in transition-all z-50 lg:relative lg:left-0 lg:w-[100%] dashboard-menu py-6 px-4 bg-white min-h-screen min-w-[20%] border-r-2 border-slate-100 `}>
+            <div className={`fixed top-0 ${menuToggled ? "left-0 max-w-[80%]" : "-left-[150%]"} duration-300 ease-in transition-all z-50 lg:sticky lg:left-0 lg:w-[100%] dashboard-menu py-6 px-4 bg-white h-screen min-w-[20%] border-r-2 border-slate-100 `}>
                 <div className="menu-header flex flex-row gap-4">
                     <div className="img">
                         <div className="w-[4rem] h-[4rem] rounded-md bg-primary"></div>
@@ -64,7 +64,7 @@ const DashboardLayout = () => {
                         <div className="tag bg-green-500 rounded-sm text-white text-[.7rem] text-center p-1">Client Admin</div>
                     </div>
                     <div className="right flex items-center gap-x-6">
-                        <div className="date text-md font-bold">{date}</div>
+                        <div className="date text-md font-bold text-headerTextLight">{date}</div>
                         <div className="toggle-menu">
                             {menuToggled ? <MdOutlineClose className='block cursor-pointer lg:hidden' onClick={menuToggledHandler} size={24} /> : <HiOutlineMenuAlt1 className='block cursor-pointer lg:hidden' onClick={menuToggledHandler} size={24} />}
                         </div>
