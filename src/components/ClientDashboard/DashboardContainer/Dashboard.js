@@ -22,7 +22,7 @@ const Dashboard = () => {
                             <h2 className='font-bold text-headerText text-2xl'>Completed</h2>
                             <Link to="" className='text-linkColor'>View all</Link>
                         </div>
-                        <div className="items flex flex-wrap flex-rows gap-x-4 ">
+                        <div className="items flex flex-wrap flex-rows gap-4 ">
                             {/* item */}
                             <div className="item p-4 shadow-md shadow-slate-200 rounded-md flex gap-x-5">
                                 <div className="left">
