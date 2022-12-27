@@ -18,3 +18,12 @@ body{
     border-radius: .3rem;
     transition: .7s all ease;
 }
+
+.dashboard-menu{
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.dashboard-menu::-webkit-scrollbar {
+    width: 1em;
+}

@@ -16,7 +16,9 @@ module.exports = {
         secondary: "#3C66A0",
         navyDark: "#344054",
         navyLight: "#667085",
-        ash: "#CBCCE8"
+        ash: "#CBCCE8",
+        headerText: "#582949",
+        linkColor: "#FA803F"
       }
     },
   },
