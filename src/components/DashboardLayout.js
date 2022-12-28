@@ -70,7 +70,7 @@ const DashboardLayout = () => {
                         </div>
                     </div>
                 </div>
-                <div className="outlet">
+                <div className="outlet px-6 py-3">
                     <Outlet />
                 </div>
             </div>
