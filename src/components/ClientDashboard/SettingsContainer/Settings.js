@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProfileImg from "../../../assets/details-img.png"
 
 const Settings = () => {
@@ -8,7 +9,7 @@ const Settings = () => {
                 <div className="personal-details mb-6">
                     <h2 className='font-bold text-xl mb-4'>Personal Details</h2>
                     <div className="details flex flex-col gap-6 md:flex-row">
-                        <div className="img w-[12rem] h-[12rem] overflow-hidden bg-black rounded-[2rem] ">
+                        <div className="img w-[12rem] h-[12rem] overflow-hidden rounded-[2rem] ">
                             <img src={ProfileImg} className="object-cover h-full w-full" alt="" />
                         </div>
                         <div className="form flex flex-col gap-5 w-[60%]">
@@ -35,7 +36,7 @@ const Settings = () => {
                         </div>
                     </div>
                 </div>
-                <div className="address-details">
+                <div className="address-details mb-6">
                 <h2 className='font-bold text-xl mb-4'>Address</h2>
                     <div className="details flex flex-col gap-y-3 md:grid md:grid-cols-3 md:gap-6">
                         <div className="address-line">
@@ -58,6 +59,15 @@ const Settings = () => {
                                 <option value="spanish">Spanish</option>
                             </select>
                         </div>
+                    </div>
+                </div>
+                <div className="bottom flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+                    <div className="change-password">
+                        <h2 className='font-bold text-xl mb-4'>Password</h2>
+                        <p className='font-bold'><Link className='italic font-light text-slate-700' to="">Click here</Link> to change password</p>
+                    </div>
+                    <div className="submit-btn">
+                        <div className="btn bg-blue-500 text-white text-center py-1 px-3 cursor-pointer rounded-md">Save my personal Info</div>
                     </div>
                 </div>
             </div>
