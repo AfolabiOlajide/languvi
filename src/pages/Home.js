@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route element={<Layout />}>
                     <Route index element={<LandingPage />} />
                 </Route>
             </Routes>

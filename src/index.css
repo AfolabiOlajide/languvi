@@ -27,3 +27,8 @@ body{
 .dashboard-menu::-webkit-scrollbar {
     display: none;
 }
+
+
+.options::-webkit-scrollbar{
+    display: none;
+}
